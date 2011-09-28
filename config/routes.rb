@@ -1,4 +1,18 @@
 SantelmoComAu::Application.routes.draw do
+  get "main/index"
+
+  get "main/menu"
+
+  get "main/drinks"
+
+  get "main/reservations"
+
+  get "main/gallery"
+
+  get "main/press"
+
+  get "main/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
