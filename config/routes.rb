@@ -3,6 +3,8 @@ SantelmoComAu::Application.routes.draw do
   
   get "main/index"
 
+  get "main/philosophy"
+  
   get "main/menu"
 
   get "main/drinks"

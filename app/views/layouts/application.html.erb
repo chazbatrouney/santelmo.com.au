@@ -9,10 +9,10 @@
 </head>
 <body>
 <div id="menu">
-  <img id="logo" src="/images/logo.png" alt="San Telmo Logo" width="200px" height="84" />
+  <a href="/"><img id="logo" src="/images/logo.png" alt="San Telmo Logo" width="200px" height="84" /></a>
   <div id="nav">
     <%= line_break %>
-    <a href="/">Home</a>
+    <%= link_to 'Philosophy', main_philosophy_path %><img class="active_link" src="/images/cross.png" />
     <%= line_break %>
     <%= link_to 'Menu', main_menu_path %>
     <%= line_break %>
