@@ -55,6 +55,11 @@ p {
   padding-top: 5px;
 }
 
+a {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
 a:link {color:white;}
 a:visited {color:white}
 a:hover {color:#ed311e;}
@@ -65,6 +70,8 @@ a:active {color: grey;}
   height: 100%;
   width: 260px;
   float: left;
+  min-height: 650px;
+  position: relative;
 }
 
 #nav, #footer {
@@ -78,9 +85,8 @@ a:active {color: grey;}
 }
 
 #footer {
-  position:fixed; 
+  position:absolute; 
   bottom:0; 
-  height:115px; 
   width:100%;
   text-transform: uppercase;
 }
@@ -92,20 +98,29 @@ a:active {color: grey;}
   display: block;
 }
 
-.bg {
-  background: url(/images/bg.jpg) repeat;
-/*   -webkit-background-size: cover; */
-  background-size: cover; 
-  margin-left: 260px;
-  width: 100%;
-  height: 100%;
-}
-
 #gallery {
   width: 1056px;
   padding: 0 30px 0 30px;
   height: 100%;
   margin-left: 260px;
+}
+
+#splash {
+  margin: 300px auto;
+  width: 200px;
+}
+
+#splash a {
+  text-align: center;
+  display: block;
+}
+
+.bg {
+  background: url(/images/bg.jpg) repeat;
+/*   -webkit-background-size: cover; */
+  background-size: cover; 
+  margin-left: 260px;
+  height: 100%;
 }
 
 .thumbnail {
@@ -129,8 +144,8 @@ a:active {color: grey;}
 }
 
 .right_float {
-  position: fixed;
-  right: 0;
+  
+  float: right;
   height: 100%;
   width: 295px;
   padding: 0 30px 0 30px;
