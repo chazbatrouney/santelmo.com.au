@@ -1,12 +1,7 @@
 module MainHelper
-  def line_break
+  def line_break(width = 29)
     content_tag :span, :class => 'line_break' do
-      "&#8226;".html_safe * 29
-    end
-  end
-  def heading_break
-    content_tag :span, :class => 'line_break' do
-      "&#8226;".html_safe * 151
+      "&#8226;".html_safe * width
     end
   end
 end
