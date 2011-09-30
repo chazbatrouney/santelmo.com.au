@@ -1,5 +1,12 @@
 class MainController < ApplicationController
+  def splash
+    render :layout => "splash"
+  end
+  
   def index
+  end
+  
+  def main
   end
   
   def philosophy
