@@ -14,7 +14,8 @@
     <% end %>
     <div id="nav">
       <%= line_break %>
-      <%= link_to 'Philosophy', main_philosophy_path %><img class="active_link" src="/images/cross.png" />
+      <%= link_to 'Philosophy', main_philosophy_path %>
+        <%= image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link") %>
       <%= line_break %>
       <%= link_to 'Menu', main_menu_path %>
       <%= line_break %>
