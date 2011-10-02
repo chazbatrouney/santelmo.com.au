@@ -103,6 +103,41 @@ a:active {color: grey;}
   padding: 0 30px 0 30px;
   height: 100%;
   margin-left: 260px;
+  position: absolute;
+}
+
+#controls {
+}
+
+#arrow_left {
+  background:transparent url("/images/arrow_left.png") top left no-repeat;
+  width: 22px;
+  height: 40px;
+  float: right;
+  padding-right: 10px;
+}
+
+#arrow_left:hover {
+  background-position: 0 -40px;  
+}
+
+#arrow_left:active {
+  background-position: 0 -80px;  
+}
+
+#arrow_right {
+  background:transparent url("/images/arrow_right.png") top left no-repeat;
+  width: 22px;
+  height: 40px;
+  float: right;
+}
+
+#arrow_right:hover {
+  background-position: 0 -40px;  
+}
+
+#arrow_right:active {
+  background-position: 0 -80px;  
 }
 
 #splash {
@@ -113,6 +148,7 @@ a:active {color: grey;}
 #splash a {
   text-align: center;
   display: block;
+  text-decoration: none;
 }
 
 .bg {
