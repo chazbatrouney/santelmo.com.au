@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>San Telmo - Argentinian Bar and Restaurant</title>
+  <%= stylesheet_link_tag :all %>
+  <link href="http://fonts.googleapis.com/css?family=Kreon" rel="stylesheet" type="text/css">
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <div id="menu">
+    <%= link_to(main_index_path) do %>
+      <%= image_tag("logo.png", :size => "200x84", :alt => "San Telmo Logo", :id => 'logo') %>
+    <% end %>
+    <div id="nav">
+      <%= line_break %>
+      <%= link_to 'Philosophy', main_philosophy_path %>
+        <%= image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link") %>
+      <%= line_break %>
+      <%= link_to 'Menu', main_menu_path %>
+      <%= line_break %>
+      <%= link_to 'Drinks', main_drinks_path %>
+      <%= line_break %>
+      <%= link_to 'Reservations', main_reservations_path %>
+      <%= line_break %>
+      <%= link_to 'Gallery', main_gallery_path %>
+      <%= line_break %>
+      <%= link_to 'Press', main_press_path %>
+      <%= line_break %>
+      <%= link_to 'Contact', main_contact_path %>
+      <%= line_break %>
+    </div>
+    <div id="footer">
+      <img class="social" src="/images/twitter.png" alt="Twitter" width="32px" height="31px" />
+      <img class="social" src="/images/facebook.png" alt="Facebook" width="31px" height="31px" />
+      <br />
+      <%= line_break %>
+      <p>Phone (03) 9650 5525</p>
+      <p>14 Meyers Place, Melbourne CBD</p>
+      <%= line_break %>
+    </div>
+  </div>
+  <%= yield %>
+</body>
+</html>

@@ -4,12 +4,14 @@ class MainController < ApplicationController
   end
   
   def index
+    render :layout => "background"
   end
   
   def main
   end
   
   def philosophy
+    render :layout => "background"
   end
 
   def menu
@@ -31,7 +33,7 @@ class MainController < ApplicationController
   end
   
   def gallery
-    @images = ['/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg']
+    @images = ['/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg']
   end
 
 end
