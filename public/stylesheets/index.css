@@ -106,9 +106,6 @@ a:active {color: grey;}
   position: absolute;
 }
 
-#controls {
-}
-
 #arrow_left {
   background:transparent url("/images/arrow_left.png") top left no-repeat;
   width: 22px;
@@ -142,8 +139,10 @@ a:active {color: grey;}
 }
 
 #splash {
-  margin: 300px auto;
+  margin: 0px auto;
   width: 200px;
+  overflow: hidden;
+  padding-top: 300px;
 }
 
 #splash a {
@@ -152,12 +151,13 @@ a:active {color: grey;}
   text-decoration: none;
 }
 
-.bg {
+#bg {
   background: url(/images/bg.jpg) repeat;
 /*   -webkit-background-size: cover; */
   background-size: cover; 
-  margin-left: 260px;
   height: 100%;
+  width: auto !important;
+  position: static;
 }
 
 .thumbnail {
