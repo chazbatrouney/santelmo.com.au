@@ -33,7 +33,7 @@ class MainController < ApplicationController
   end
   
   def gallery
-    @images = ['/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-1.jpg']
+    @images = ['/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-2.jpg', '/images/gallery/thumbnail-3.jpg', '/images/gallery/thumbnail-4.jpg', '/images/gallery/thumbnail-5.jpg', '/images/gallery/thumbnail-6.jpg']
   end
 
 end
