@@ -1,0 +1,24 @@
+<div id="menu">
+  <%= link_to(main_index_path) do %>
+    <%= image_tag("logo.png", :size => "200x84", :alt => "San Telmo Logo", :id => 'logo') %>
+  <% end %>
+  <div id="nav">
+    <%= nav_link 'Philosophy', main_philosophy_path %>
+    <%= nav_link 'Menu', main_menu_path %>
+    <%= nav_link 'Drinks', main_drinks_path %>
+    <%= nav_link 'Reservations', main_reservations_path %>
+    <%= nav_link 'Gallery', main_gallery_path %>
+    <%= nav_link 'Press', main_press_path %>
+    <%= nav_link 'Contact', main_contact_path %>
+    <%= line_break %>
+  </div>
+  <div id="footer">
+    <img class="social" src="/images/twitter.png" alt="Twitter" width="32px" height="31px" />
+    <img class="social" src="/images/facebook.png" alt="Facebook" width="31px" height="31px" />
+    <br />
+    <%= line_break %>
+    <p>Phone (03) 9650 5525</p>
+    <p>14 Meyers Place, Melbourne CBD</p>
+    <%= line_break %>
+  </div>
+</div>
