@@ -32,8 +32,25 @@ class MainController < ApplicationController
   def contact
   end
   
+  N_IMAGES_PER_PAGE = 6
   def gallery
-    @images = ['/images/gallery/thumbnail-1.jpg', '/images/gallery/thumbnail-2.jpg', '/images/gallery/thumbnail-3.jpg', '/images/gallery/thumbnail-4.jpg', '/images/gallery/thumbnail-5.jpg', '/images/gallery/thumbnail-6.jpg']
+    params[:page] ||= 1
+  
+    @all_images = [
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-1.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-2.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-3.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-4.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-5.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-6.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-7.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-8.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
+      {:title => "Tom's Name", :url => 'base-1.jpg', :thumbnail_url => 'thumbnail-10.jpg'}
+    ]
+    
+    first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
+    @images = @all_images[first_image, N_IMAGES_PER_PAGE]
   end
 
 end
