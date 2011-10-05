@@ -108,34 +108,35 @@ a:active {color: grey;}
 
 #arrow_left {
   background:transparent url("/images/arrow_left.png") top left no-repeat;
-  width: 22px;
-  height: 40px;
+  width: 14px;
+  height: 25px;
   float: right;
-  margin: 10px 10px 0;
+  margin: 25px 10px 0;
+  display: none;
 }
 
 #arrow_left:hover {
-  background-position: 0 -40px;  
+  background-position: 0 -25px;  
 }
 
 #arrow_left:active {
-  background-position: 0 -80px;  
+  background-position: 0 -50px;  
 }
 
 #arrow_right {
   background:transparent url("/images/arrow_right.png") top left no-repeat;
-  width: 22px;
-  height: 40px;
+  width: 14px;
+  height: 25px;
   float: right;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 #arrow_right:hover {
-  background-position: 0 -40px;  
+  background-position: 0 -25px;  
 }
 
 #arrow_right:active {
-  background-position: 0 -80px;  
+  background-position: 0 -50px;  
 }
 
 #splash {
