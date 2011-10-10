@@ -78,7 +78,7 @@ a:active {color: grey;}
   padding-left: 30px;
 }
 
-#nav a {
+#nav #footer, a {
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
@@ -116,7 +116,6 @@ a:active {color: grey;}
   height: 25px;
   float: right;
   margin: 25px 10px 0;
-  display: none;
 }
 
 #arrow_left:hover {
@@ -141,6 +140,36 @@ a:active {color: grey;}
 
 #arrow_right:active {
   background-position: 0 -50px;  
+}
+
+#twitter {
+  background:transparent url("/images/twitter.png") top left no-repeat;
+  width: 31px;
+  height: 31px;
+  float: left;
+}
+
+#twitter:hover {
+  background-position: 0 -31px;
+}
+
+#twitter:active {
+  background-position: 0 -62px;
+}
+
+#facebook {
+  background:transparent url("/images/facebook.png") top left no-repeat;
+  width: 31px;
+  height: 31px;
+  float: left;
+}
+
+#facebook:hover {
+  background-position: 0 -31px;
+}
+
+#facebook:active {
+  background-position: 0 -62px;
 }
 
 #splash {
@@ -177,7 +206,7 @@ a:active {color: grey;}
 }
 
 .social {
-  padding-right:  5px;
+  margin: 0 10px 10px 0;
 }
 
 .active_link {

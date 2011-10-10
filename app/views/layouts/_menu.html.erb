@@ -13,8 +13,12 @@
     <%= line_break %>
   </div>
   <div id="footer">
-    <img class="social" src="/images/twitter.png" alt="Twitter" width="32px" height="31px" />
-    <img class="social" src="/images/facebook.png" alt="Facebook" width="31px" height="31px" />
+    <%= link_to("http://twitter.com/#!/San_Telmo_") do %>
+      <div id="twitter" class="social"></div>
+    <% end %>    
+    <%= link_to("https://www.facebook.com/pages/San-Telmo/238471602841880") do %>
+      <div id="facebook" class="social"></div>
+    <% end %>
     <br />
     <%= line_break %>
     <p>Phone (03) 9650 5525</p>
