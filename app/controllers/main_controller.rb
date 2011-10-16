@@ -15,12 +15,15 @@ class MainController < ApplicationController
   end
 
   def menu
+    render :layout => "background"
   end
 
   def drinks
+    render :layout => "background"
   end
 
   def reservations
+    render :layout => "background"
   end
 
   def gallery
@@ -30,6 +33,7 @@ class MainController < ApplicationController
   end
 
   def contact
+    render :layout => "background"
   end
   
   N_IMAGES_PER_PAGE = 6
@@ -51,6 +55,10 @@ class MainController < ApplicationController
     
     first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
     @images = @all_images[first_image, N_IMAGES_PER_PAGE]
+#    @next_page = nil if @next_page * N_IMAGES_PER_PAGE >= @all_photos.length
+#    @current_page = params[:page].to_I || 1
+#    @next_page = @current_page + 1
+#    @prevous_page = @current_page - 1
   end
 
 end
