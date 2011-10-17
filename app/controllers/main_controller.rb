@@ -54,11 +54,11 @@ class MainController < ApplicationController
     ]
     
     first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
+    first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
     @images = @all_images[first_image, N_IMAGES_PER_PAGE]
-#    @next_page = nil if @next_page * N_IMAGES_PER_PAGE >= @all_photos.length
-#    @current_page = params[:page].to_I || 1
-#    @next_page = @current_page + 1
-#    @prevous_page = @current_page - 1
+    @next_page = @current_page + 1
+    @current_page = params[:page].to_i || 1
+    @prevous_page = @current_page - 1
+    @next_page = nil if @next_page * N_IMAGES_PER_PAGE >= @all_images.length  
   end
-
 end
