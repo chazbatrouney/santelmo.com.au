@@ -84,6 +84,7 @@ a:active {color: grey;}
 #menu_wrapper {
   position: relative;
   min-height: 750px;
+  height: 100%;
 }
 
 #nav, #footer {
