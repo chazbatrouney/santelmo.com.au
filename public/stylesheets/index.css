@@ -127,7 +127,7 @@ a:active {color: grey;}
   width: 14px;
   height: 25px;
   float: right;
-  margin: 25px 10px 0;
+  margin-top: 25px;
 }
 
 #arrow_left:hover {
@@ -143,7 +143,7 @@ a:active {color: grey;}
   width: 14px;
   height: 25px;
   float: right;
-  margin-top: 25px;
+  margin: 25px 0 0 10px;
 }
 
 #arrow_right:hover {
@@ -152,6 +152,10 @@ a:active {color: grey;}
 
 #arrow_right:active {
   background-position: 0 -50px;  
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #twitter {

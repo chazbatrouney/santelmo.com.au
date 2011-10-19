@@ -1,8 +1,9 @@
-<%= link_to(@next_page) do %>
+<%= link_to({:page => @next_page}, :class => @next_page.nil? ? 'hidden' : '') do %>
   <div id="arrow_right"></div>
 <% end %>
-<div id="arrow_left"></div>
-
+<%= link_to({:page => @previous_page}, :class => @previous_page.nil? ? 'hidden' : '') do %>
+  <div id="arrow_left"></div>
+<% end%>
 
 <h1>Gallery</h1>
 <%= line_break(151) %>

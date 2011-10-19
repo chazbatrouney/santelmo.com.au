@@ -50,15 +50,23 @@ class MainController < ApplicationController
       {:title => "Image Seven", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-7.jpg'},
       {:title => "Image Eight", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-8.jpg'},
       {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
-      {:title => "Image Ten", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-10.jpg'}
+      {:title => "Image Ten", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-10.jpg'},
+      {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
+      {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
+      {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
+      {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'},
+      {:title => "Image Nine", :url => 'image-2.jpg', :thumbnail_url => 'thumbnail-9.jpg'}
     ]
     
-    first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
-    first_image = (params[:page].to_i - 1) * N_IMAGES_PER_PAGE
-    @images = @all_images[first_image, N_IMAGES_PER_PAGE]
-    @next_page = @current_page + 1
     @current_page = params[:page].to_i || 1
-    @prevous_page = @current_page - 1
-    @next_page = nil if @next_page * N_IMAGES_PER_PAGE >= @all_images.length  
+    
+    @next_page = @current_page + 1
+    @next_page = nil if @current_page * N_IMAGES_PER_PAGE >= @all_images.length
+    
+    @previous_page = @current_page - 1
+    @previous_page = nil if @previous_page < 1
+
+    first_image = (@current_page - 1) * N_IMAGES_PER_PAGE
+    @images = @all_images[first_image, N_IMAGES_PER_PAGE]
   end
 end
