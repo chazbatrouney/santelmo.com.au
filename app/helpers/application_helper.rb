@@ -1,8 +1,8 @@
 module ApplicationHelper
-  def nav_link(text, path)
+  def nav_link(text, path, current = nil?)
     link = line_break + link_to(text, path)
     
-    if current_page? path
+    if current || current_page?(path)
       link += image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link")
     end
     
