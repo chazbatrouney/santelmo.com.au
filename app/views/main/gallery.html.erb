@@ -1,5 +1,9 @@
-<div id="arrow_right"></div>
+<%= link_to(@next_page) do %>
+  <div id="arrow_right"></div>
+<% end %>
 <div id="arrow_left"></div>
+
+
 <h1>Gallery</h1>
 <%= line_break(151) %>
 <% @images.each do |image| %>

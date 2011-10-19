@@ -1,33 +1,35 @@
 <div id="menu">
-  <%= link_to(main_index_path) do %>
-    <%= image_tag("logo.png", :size => "200x84", :alt => "San Telmo Logo", :id => 'logo') %>
-  <% end %>
-  <div id="nav">
-    <%= nav_link 'Philosophy', main_philosophy_path %>
-    <%= nav_link 'Menu', main_menu_path %>
-    <%= nav_link 'Drinks', main_drinks_path %>
-    <%= nav_link 'Reservations', main_reservations_path %>
-    <%= nav_link 'Gallery', main_gallery_path %>
-    <%= nav_link 'Press', main_press_path %>
-<!--     <%= nav_link 'Contact', main_contact_path %> -->
-    <%= line_break %>
-  </div>
-  <div id="footer">
-    <%= link_to("http://twitter.com/#!/San_Telmo_") do %>
-      <div id="twitter" class="social"></div>
-    <% end %>    
-    <%= link_to("https://www.facebook.com/pages/San-Telmo/238471602841880") do %>
-      <div id="facebook" class="social"></div>
+  <div id="menu_wrapper">
+    <%= link_to(main_index_path) do %>
+      <%= image_tag("logo.png", :size => "200x84", :alt => "San Telmo Logo", :id => 'logo') %>
     <% end %>
-    <br />
-    <%= line_break %>
-    <p>Phone: +61 (3) 9650 5525<br />
-      Fax: +61 (3) 9650 552</p>
-    <p>14 Meyers Place, Melbourne 3000</p>
-    <p>or</p>
-    <p>Opposite # 7 Windsor Place<br />
-      Between Bourke & Lt Collins St’s</p>
-    <a href="mailto:info@santelmo.com.au">info@santelmo.com.au</a>
-    <%= line_break %>
+    <div id="nav">
+      <%= nav_link 'Philosophy', main_philosophy_path %>
+      <%= nav_link 'Menu', main_menu_path %>
+      <%= nav_link 'Drinks', main_drinks_path %>
+      <%= nav_link 'Reservations', main_reservations_path %>
+      <%= nav_link 'Gallery', main_gallery_path %>
+      <%= nav_link 'Press', main_press_path %>
+  <!--     <%= nav_link 'Contact', main_contact_path %> -->
+      <%= line_break %>
+    </div>
+    <div id="footer">
+      <%= link_to("http://twitter.com/#!/San_Telmo_") do %>
+        <div id="twitter" class="social"></div>
+      <% end %>    
+      <%= link_to("https://www.facebook.com/pages/San-Telmo/238471602841880") do %>
+        <div id="facebook" class="social"></div>
+      <% end %>
+      <br />
+      <%= line_break %>
+      <p>Phone: +61 (3) 9650 5525<br />
+        Fax: +61 (3) 9650 552</p>
+      <p>14 Meyers Place, Melbourne 3000</p>
+      <p>or</p>
+      <p>Opposite # 7 Windsor Place<br />
+        Between Bourke & Lt Collins St’s</p>
+      <a href="mailto:info@santelmo.com.au">info@santelmo.com.au</a>
+      <%= line_break %>
+    </div>
   </div>
 </div>

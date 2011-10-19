@@ -76,8 +76,14 @@ a:active {color: grey;}
   height: 100%;
   width: 260px;
   float: left;
-  min-height: 650px;
   position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#menu_wrapper {
+  position: relative;
+  min-height: 750px;
 }
 
 #nav, #footer {
@@ -220,10 +226,10 @@ a:active {color: grey;}
   float: right;
 }
 
-.right_float {
-  
+.right_float { 
   float: right;
   height: 100%;
+  overflow-y: auto;
   width: 295px;
   padding: 0 30px 0 30px;
   background-color: black;
