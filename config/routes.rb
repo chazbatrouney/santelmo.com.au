@@ -1,5 +1,5 @@
 SantelmoComAu::Application.routes.draw do
-  root :to => 'main#splash'
+  root :to => 'main#index'
   
   get "main/index"
 
