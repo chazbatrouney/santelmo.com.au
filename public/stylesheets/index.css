@@ -45,7 +45,7 @@ body {
 
 h1 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 15px;
   padding: 30px 0 5px;
 }
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   padding-bottom: 10px;
   padding-top: 5px;
 }
@@ -83,7 +83,7 @@ a:active {color: grey;}
 
 #menu_wrapper {
   position: relative;
-  min-height: 750px;
+  min-height: 675px;
   height: 100%;
 }
 
@@ -106,6 +106,10 @@ a:active {color: grey;}
   bottom:0; 
   width:100%;
   text-transform: uppercase;
+}
+
+#footer p, #footer a {
+  font-size: 12px;
 }
 
 #logo {
@@ -235,7 +239,7 @@ a:active {color: grey;}
   float: right;
   height: 100%;
   overflow-y: auto;
-  width: 295px;
+  width: 550px;
   padding: 0 30px 0 30px;
   background-color: black;
 }
