@@ -60,7 +60,7 @@ p {
   font-size: 15px;
   padding-bottom: 10px;
   padding-top: 5px;
-  font-family: "Voltaire";
+  font-family: "PT+Sans";
 }
 
 a {
@@ -89,6 +89,7 @@ a:active {color: white;}
 }
 
 #menu_wrapper {
+  background: url("/images/wood_strip_alt.jpg") top left no-repeat;
   position: relative;
   min-height: 675px;
   height: 100%;
@@ -208,19 +209,6 @@ a:active {color: white;}
   background-position: 0 -62px;
 }
 
-#splash {
-  margin: 0px auto;
-  width: 200px;
-  overflow: hidden;
-  padding-top: 300px;
-}
-
-#splash a {
-  text-align: center;
-  display: block;
-  text-decoration: none;
-}
-
 #bg {
   background: url(/images/bg.jpg) repeat;
 /*   -webkit-background-size: cover; */
@@ -232,8 +220,13 @@ a:active {color: white;}
 
 .full_page {
   background: black;
+  width: 1056px;
+  padding: 0 30px 0 30px;
   height: 100%;
   overflow-y: auto;
+  min-width: 780px;
+  margin-left: 260px;
+  position: absolute;
 }
 
 .thumbnail {
@@ -247,6 +240,19 @@ a:active {color: white;}
   color: #de1b22;
   font-size: 14px;
   letter-spacing: 3px;
+}
+
+.page_break {
+  margin: 20px auto;
+  background: url("/images/break.png") no-repeat top left;
+  width: 50px;
+  height: 20px;
+  display: block;
+}
+
+.black {
+  background-color: black;
+  height: 100%;
 }
 
 .social {
@@ -263,11 +269,15 @@ a:active {color: white;}
   display: inline;
 }
 
+#main {
+  background-color: black;
+}
+
 .right_float { 
   float: right;
   height: 100%;
   overflow-y: auto;
   width: 460px;
   padding: 0 30px 0 30px;
-  background-color: black;
+  background: url("/images/wood_strip.jpg") bottom left repeat-x;
 }
