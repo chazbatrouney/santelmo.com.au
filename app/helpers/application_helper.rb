@@ -1,12 +1,17 @@
 module ApplicationHelper
   def nav_link(text, path, current = nil?)
-    link = line_break + link_to(text, path)
+    current ||= current_page?(path)
     
-    if current || current_page?(path)
-      link += image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link")
+    content_tag :div, :class => 'link' + (current ? ' current' : '') do
+      link = line_break + link_to(text, path, :class => 'pjax')
+      
+      link += link_to(main_index_path) do 
+        image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link")
+      end 
+      
+      link
     end
     
-    link
   end
   
   def line_break(width = 29)

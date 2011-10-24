@@ -230,6 +230,12 @@ a:active {color: white;}
   position: static;
 }
 
+.full_page {
+  background: black;
+  height: 100%;
+  overflow-y: auto;
+}
+
 .thumbnail {
   float: left;
   margin: 21px;
@@ -248,8 +254,13 @@ a:active {color: white;}
 }
 
 .active_link {
+  display: none;
   padding-right: 30px;
   float: right;
+}
+
+.current .active_link {
+  display: inline;
 }
 
 .right_float { 
