@@ -37,7 +37,7 @@ abbr, acronym {
 html, body {
   height: 100%;
   font-family: "Kreon";
-  color: white; }
+  color: #ccc; }
 
 body {
   background-color: black;
@@ -56,10 +56,18 @@ h2 {
   padding: 25px 0 2px;
 }
 
-p {
-  font-size: 14px;
+h4 {
+  font-size: 21px;
+  color: #cccccc;
   padding-bottom: 10px;
   padding-top: 5px;
+}
+
+p {
+  font-size: 15px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-family: "Voltaire"
 }
 
 a {
@@ -67,10 +75,10 @@ a {
   font-size: 12px;
 }
 
-a:link {color:white;}
-a:visited {color:white}
-a:hover {color:#ed311e;}
-a:active {color: grey;}
+a:link {color:#ccc;}
+a:visited {color:#ccc}
+a:hover {color:#de1b22;}
+a:active {color: white;}
 
 #menu {
   background-color: black;
@@ -93,7 +101,7 @@ a:active {color: grey;}
 }
 
 #nav a {
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -110,7 +118,9 @@ a:active {color: grey;}
 }
 
 #footer p, #footer a {
-  font-size: 12px;
+  font-size: 13px;
+  font-family: "Kreon"
+
 }
 
 #logo {
@@ -225,7 +235,7 @@ a:active {color: grey;}
 }
 
 .line_break {
-  color: #ed311e;
+  color: #de1b22;
   font-size: 14px;
   letter-spacing: 3px;
 }
