@@ -56,18 +56,11 @@ h2 {
   padding: 25px 0 2px;
 }
 
-h4 {
-  font-size: 21px;
-  color: #cccccc;
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
-
 p {
   font-size: 15px;
   padding-bottom: 10px;
   padding-top: 5px;
-  font-family: "Voltaire"
+  font-family: "Voltaire";
 }
 
 a {
@@ -79,6 +72,11 @@ a:link {color:#ccc;}
 a:visited {color:#ccc}
 a:hover {color:#de1b22;}
 a:active {color: white;}
+
+.abstract {
+  font-family: "Kreon";
+  font-size: 21px;
+}
 
 #menu {
   background-color: black;
@@ -119,8 +117,8 @@ a:active {color: white;}
 
 #footer p, #footer a {
   font-size: 13px;
-  font-family: "Kreon"
-
+  font-family: "Kreon";
+  padding: 0 0 7px;
 }
 
 #logo {
@@ -188,6 +186,11 @@ a:active {color: white;}
 
 #twitter:active {
   background-position: 0 -62px;
+}
+
+.twitter-follow-button {
+  padding-top: 9px;
+  padding-bottom: 1px;
 }
 
 #facebook {
