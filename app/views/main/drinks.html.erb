@@ -1,10 +1,12 @@
 <div class="right_float" id="main">
   <h1>Drinks</h1>
   <%= line_break(66) %>
-  <p>With a rich wine history of over 500 years experience, coupled with the investment and influence of top wine producers from Spain, Italy and France, Argentinian wine has greatly improved in quality and is finally receiving the recognition it deserves as the world's 5th largest wine producer.</p>
+  <p class="abstract">With a rich wine history of over 500 years experience, coupled with the investment and influence of top wine producers from Spain, Italy and France, Argentinian wine has greatly improved in quality and is finally receiving the recognition it deserves as the world's 5th largest wine producer.</p>
+  <div class="page_break"></div>
   <p>Aside from being the Kings of the forgotten Malbec red wine grape and their own white varietal Torrrontes, Argentinian wine has been producing great examples of all the noble grape varietals and with an exclusively Argentinian wine list we will provide the opportunity to discover great Argentine wines.</p>
   <p>Mendoza sets itself apart from other wine regions with its proximity to the Andes providing purity of environment, intense UV light and a harsher climate through which the grapes are forced to struggle, creating albeit a far more interesting and natural fruit driven palate.</p>
   <p>From Salta and Cafayate in the North, down to Patagonia and the Rio Negro in the south, we have sourced our wines to represent all different regions and climates in Argentina.  Many of our wines are also personally sourced and therefore are only avilable at San Telmo.</p>
-  
-  <%= link_to 'See our wine list', '/images/wine_list.pdf', :class => 'menu_link', :target => '_blank' %>
+  <%= link_to('/images/drinks_menu.pdf', :target => '_blank') do %>
+    <%= image_tag("drinks_thumbnail.jpg", :size => "200x283 ", :alt => "San Telmo Drinks Menu", :class => "menu_link") %>
+  <% end %>
 </div>
