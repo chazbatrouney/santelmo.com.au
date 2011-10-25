@@ -64,10 +64,12 @@
 }
 #lightbox-nav-btnPrev { 
 	left: 0;
+	margin-left: 3px;
 	float: left;
 }
 #lightbox-nav-btnNext { 
-	right: 0; 
+	right: 0;
+	margin-right: 3px; 
 	float: right;
 }
 #lightbox-container-image-data-box {
@@ -102,5 +104,5 @@
 #lightbox-secNav-btnClose {
 	width: 24px; 
 	float: right;
-	padding-bottom: 0.7em;	
+	padding-bottom: 20px;	
 }
