@@ -1,9 +1,7 @@
 $(function() {
   $('a.lightbox').lightBox(); // Select all links with lightbox class
-  $('a.pjax').pjax('#bg', {fragment: '#bg'});
+  $('a.pjax').pjax('#bg', {fragment: '#bg', timeout: 2000});
 });
-
-
 
 $('#bg').live('pjax:start', function() {
   $('#main').hide('slide', {direction: 'right'})
