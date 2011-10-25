@@ -76,7 +76,7 @@ a:active {color: white;}
 
 .abstract {
   font-family: "Kreon";
-  font-size: 21px;
+  font-size: 19px;
 }
 
 #menu {
@@ -90,7 +90,7 @@ a:active {color: white;}
 }
 
 #menu_wrapper {
-  background: url("/images/wood_strip_alt.jpg") top left no-repeat;
+  background: url("/images/wood_strip_top.jpg") top left no-repeat;
   position: relative;
   min-height: 675px;
   height: 100%;
@@ -126,8 +126,8 @@ a:active {color: white;}
 
 #logo {
   margin: 0 auto;
-  width: 220px;
-  padding: 30px 0 20px;
+  width: 200px;
+  padding: 48px 0 48px;
   display: block;
 }
 
@@ -226,9 +226,7 @@ a:active {color: white;}
 }
 
 .full_page {
-/*   float: right; */
-  background: url("/images/wood_strip.jpg") bottom left repeat-x;
-/*   width: 1056px; */
+  background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
   padding: 0 30px 0 30px;
   height: 100%;
   overflow-y: auto;
@@ -264,6 +262,11 @@ a:active {color: white;}
   margin: 0 10px 10px 0;
 }
 
+.menu_link {
+  margin: 20px auto;
+  display: block;
+}
+
 .active_link {
   display: none;
   padding-right: 30px;
@@ -284,5 +287,5 @@ a:active {color: white;}
   overflow-y: auto;
   width: 460px;
   padding: 0 30px 0 30px;
-  background: url("/images/wood_strip.jpg") bottom left repeat-x;
+  background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
 }
