@@ -1,3 +1,4 @@
+
 /*
   Copyright (c) 2008, Yahoo! Inc. All rights reserved.
   Code licensed under the BSD License:
@@ -249,11 +250,6 @@ a:active {color: white;}
   width: 50px;
   height: 20px;
   display: block;
-}
-
-.black {
-  background-color: black;
-  height: 100%;
 }
 
 .social {
