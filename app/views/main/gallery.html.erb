@@ -1,16 +1,18 @@
 <div class="full_page" id="main">
-  <%= link_to({:page => @next_page}, :class => @next_page.nil? ? 'hidden' : '') do %>
-    <div id="arrow_right"></div>
-  <% end %>
-  <%= link_to({:page => @previous_page}, :class => @previous_page.nil? ? 'hidden' : '') do %>
-    <div id="arrow_left"></div>
-  <% end%>
-  
-  <h1>Gallery</h1>
-  <%= line_break(151) %>
-  <% @images.each do |image| %>
-    <a class="lightbox" href="/images/gallery/<%= image[:url] %>" title="<%= image[:title] %>">
-      <img class="thumbnail" src="/images/gallery/<%= image[:thumbnail_url] %>" />
-    </a>
-  <% end %>
+  <div id="gallery_wrapper">
+    <%= link_to({:page => @next_page}, :class => @next_page.nil? ? 'hidden' : '') do %>
+      <div id="arrow_right"></div>
+    <% end %>
+    <%= link_to({:page => @previous_page}, :class => @previous_page.nil? ? 'hidden' : '') do %>
+      <div id="arrow_left"></div>
+    <% end%>
+    
+    <h1>Gallery</h1>
+    <%= line_break(151) %>
+    <% @images.each do |image| %>
+      <a class="lightbox" href="/images/gallery/<%= image[:url] %>" title="<%= image[:title] %>">
+        <img class="thumbnail" src="/images/gallery/<%= image[:thumbnail_url] %>" />
+      </a>
+    <% end %>
+  </div>
 </div>
