@@ -67,6 +67,7 @@ p {
 a {
   text-transform: uppercase;
   font-size: 12px;
+  text-decoration: none;
 }
 
 a:link {color:#ccc;}
@@ -262,10 +263,38 @@ a:active {color: white;}
   margin: 0 10px 10px 0;
 }
 
-.menu_link {
+#drinks_link {
+  background:transparent url("/images/drinks_thumbnail.jpg") no-repeat top left;
+  width: 200px;
+  height: 283px;
   margin: 20px auto;
   display: block;
 }
+
+#drinks_link:hover {
+  background-position: 0 -283px;
+}
+
+#drinks_link:active {
+  background-position: 0 -566px;
+}
+
+#menu_link {
+  background:transparent url("/images/menu_thumbnail.jpg") no-repeat top left;
+  width: 200px;
+  height: 283px;
+  margin: 20px auto;
+  display: block;
+}
+
+#menu_link:hover {
+  background-position: 0 -283px;
+}
+
+#menu_link:active {
+  background-position: 0 -566px;
+}
+
 
 .active_link {
   display: none;
