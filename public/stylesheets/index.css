@@ -217,12 +217,20 @@ a:active {color: white;}
 }
 
 #bg {
-  background: url(/images/bg.jpg) repeat;
+  background: url("/images/bg.jpg") repeat;
 /*   -webkit-background-size: cover; */
   background-size: cover; 
   height: 100%;
   width: auto !important;
   position: static;
+}
+
+#philosophy_image {
+  background: url("/images/philosophy_image.jpg") no-repeat top left;
+  display: block;
+  margin: 0 auto 20px;
+  width: 400px;
+  height: 270px;
 }
 
 #gallery_wrapper {
@@ -298,7 +306,6 @@ a:active {color: white;}
 #menu_link:active {
   background-position: 0 -566px;
 }
-
 
 .active_link {
   display: none;
