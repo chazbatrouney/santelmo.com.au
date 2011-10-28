@@ -295,8 +295,8 @@ a:active {color: white;}
   background:transparent url("/images/menu_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
-  margin: 20px auto;
-  display: block;
+  margin: 20px 20px 0;
+  display: inline-block;
 }
 
 #menu_link:hover {
@@ -305,6 +305,32 @@ a:active {color: white;}
 
 #menu_link:active {
   background-position: 0 -566px;
+}
+
+#set_menu_link {
+  background:transparent url("/images/set_menu_thumbnail.jpg") no-repeat top left;
+  width: 200px;
+  height: 283px;
+  margin: 20px 0 0;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+}
+
+#set_menu_link:hover {
+  background-position: 0 -283px;
+}
+
+#set_menu_link:active {
+  background-position: 0 -566px;
+}
+
+.thumbnail_heading p {
+  margin: 200px 0;
+  text-align: center;
+  font-size: 17px;
+  padding: 0;
+  color: white;
 }
 
 .active_link {

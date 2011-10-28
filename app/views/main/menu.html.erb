@@ -6,7 +6,10 @@
   <p>Our menu is designed to be shared - the social element of an Asado is an integral part of Argentinian culture and is considered an opportunity to enjoy great food and wine with family and friends. As such, all cuts of meat are presented with a recommended cooking degree, however we do accommodate requests for specific cooking preferences.</p>
   <p>The menu has been inspired by the food and wine we enjoyed whilst in Argentina - from the restaurants we visited, to the friends and families we came to know during our travels. And now, we look forward to sharing our love of the Argentine parrilla with you.</p>
   <%= link_to('/images/menu.pdf', :target => '_blank') do %>
-    <div id="menu_link"></div>
+    <div id="menu_link" class="thumbnail_heading"><p>Menu</p></div>
+  <% end %>
+  <%= link_to('/images/set_menu.pdf', :target => '_blank') do %>
+    <div id="set_menu_link" class="thumbnail_heading"><p>SET MENU</p></div>
   <% end %>
 </div>
 
