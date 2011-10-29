@@ -6,7 +6,7 @@ module ApplicationHelper
       link = line_break + link_to(text, path, :class => 'pjax')
       
       link += link_to(main_index_path, :class => 'pjax') do 
-        image_tag("cross.png", :size => "24x24", :alt => "Active Cross", :class => "active_link")
+        content_tag(:div, "", :class => "active_link cross")
       end 
       
       link
