@@ -173,6 +173,13 @@ a:active {color: white;}
   background-position: 0 -50px;  
 }
 
+#close_page {
+  width: 24px;
+  height: 24px;
+  float: right;
+  margin-top: 25px; 
+}
+
 .hidden {
   visibility: hidden;
 }

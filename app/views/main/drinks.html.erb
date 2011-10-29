@@ -1,4 +1,7 @@
 <div class="right_float" id="main">
+  <%= link_to(main_index_path, :id => 'close_page', :class => 'pjax') do %>
+    <%= image_tag("cross.png", :size => "24x24 ") %>
+  <% end %>
   <h1>Drinks</h1>
   <%= line_break(66) %>
   <p class="abstract">With an all-Argentinian wine list and exclusive Argentine beers hand selected by the restaurateurs during their adventures, the whole list has strong Argentine flair including sexy cocktails that involve use of the grill and fresh fruit.</p>

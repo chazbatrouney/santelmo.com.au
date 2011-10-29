@@ -1,4 +1,7 @@
 <div class="right_float" id="main">
+  <%= link_to(main_index_path, :id => 'close_page', :class => 'pjax') do %>
+    <%= image_tag("cross.png", :size => "24x24 ") %>
+  <% end %>
   <h1>Reservations</h1>
   <%= line_break(66) %>
   <p class="abstract">Bookings are available in the main dining area while we do endeavour to keep around half our seating available for walk-ins and last minute urges for an empanada and beer or a big steak and a red wine.
