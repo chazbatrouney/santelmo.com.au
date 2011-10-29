@@ -193,6 +193,20 @@ a:active {color: white;}
   margin-top: 25px; 
 }
 
+.cross {
+  width: 24px;
+  height: 24px;
+  background: transparent url("/images/cross.png") top left no-repeat;
+}
+
+.cross:hover {
+  background-position: 0 -24px;
+}
+
+.cross:active {
+  background-position: 0 -48px;
+}
+
 .hidden {
   visibility: hidden;
 }
