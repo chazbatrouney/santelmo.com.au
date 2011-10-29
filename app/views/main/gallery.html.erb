@@ -1,10 +1,10 @@
 <div class="full_page" id="main">
   <div id="gallery_wrapper">
     <%= link_to({:page => @next_page}, :class => 'pjax' + (@next_page.nil? ? 'hidden' : '')) do %>
-      <div id="arrow_right"></div>
+      <div id="arrow_right"><p>Next</p></div>
     <% end %>
     <%= link_to({:page => @previous_page}, :class => 'pjax' + (@previous_page.nil? ? 'hidden' : '')) do %>
-      <div id="arrow_left"></div>
+      <div id="arrow_left"><p>Prev</p></div>
     <% end%>
     
     <h1>Gallery</h1>
