@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def nav_link(text, path, current = nil?)
+  def nav_link(text, path, current = nil)
     current ||= current_page?(path)
     
     content_tag :div, :class => 'link' + (current ? ' current' : '') do
