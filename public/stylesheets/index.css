@@ -261,7 +261,13 @@ a:active {color: white;}
 
 #philosophy_image {
   background: url("/images/philosophy_image.jpg") no-repeat top left;
-  display: block;
+  margin: 0 auto 20px;
+  width: 400px;
+  height: 270px;
+}
+
+#grill {
+  background: url("/images/grill.jpg") no-repeat top left;
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
@@ -314,7 +320,10 @@ a:active {color: white;}
   width: 200px;
   height: 283px;
   margin: 20px auto;
-  display: block;
+  display: inline;
+  float: left;
+  margin: 10px 20px 10px 0;
+
 }
 
 #drinks_link:hover {
