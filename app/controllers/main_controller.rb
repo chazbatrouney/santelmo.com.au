@@ -19,7 +19,10 @@ class MainController < ApplicationController
       {:title => "", :url => 'image-12.jpg', :thumbnail_url => 'thumbnail-12.jpg'},
       {:title => "", :url => 'image-13.jpg', :thumbnail_url => 'thumbnail-13.jpg'},
       {:title => "", :url => 'image-14.jpg', :thumbnail_url => 'thumbnail-14.jpg'},
-      {:title => "", :url => 'image-15.jpg', :thumbnail_url => 'thumbnail-15.jpg'}
+      {:title => "", :url => 'image-15.jpg', :thumbnail_url => 'thumbnail-15.jpg'},
+      {:title => "", :url => 'image-16.jpg', :thumbnail_url => 'thumbnail-16.jpg'},
+      {:title => "", :url => 'image-17.jpg', :thumbnail_url => 'thumbnail-17.jpg'},
+      {:title => "", :url => 'image-18.jpg', :thumbnail_url => 'thumbnail-18.jpg'}
     ]
     
     @current_page = params[:page].to_i || 1
