@@ -4,7 +4,22 @@ function initPage() {
     $('body').addClass('gallery');
   } else {
     $('body').removeClass('gallery');
-  }  
+  }
+  
+  // init any twitter guys (code stolen from BindleMe)
+  var $tweets = $('#tweets');
+  if ($tweets.length) {
+    function callback(data) {
+      var tweet = data[0],
+        text = twitterlib.ify.clean(twitterlib.expandLinks(data[0])),
+        link = '<a href="http://twitter.com/' + tweet.user.screen_name +
+          '/status/' + tweet.id_str + '" class="twitter_link"><i>' +
+          twitterlib.time.relative(tweet.created_at) + '</i></a>';
+
+      $tweets.html(text + '<br>' + link);
+    }
+    twitterlib.status("san_telmo_", { page: 1, limit: 1 }, callback);    
+  }
 }
 
 // url equality doesn't consider parameters. Right for us now, could be wrong in future.
