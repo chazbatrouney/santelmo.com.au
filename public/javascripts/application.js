@@ -13,8 +13,8 @@ function initPage() {
       var tweet = data[0],
         text = twitterlib.ify.clean(twitterlib.expandLinks(data[0])),
         link = '<a href="http://twitter.com/' + tweet.user.screen_name +
-          '/status/' + tweet.id_str + '" class="twitter_link"><i>' +
-          twitterlib.time.relative(tweet.created_at) + '</i></a>';
+          '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
+          twitterlib.time.relative(tweet.created_at) + '</i>';
 
       $tweets.html(text + '<br>' + link);
     }

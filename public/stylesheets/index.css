@@ -93,7 +93,7 @@ a:active {color: white;}
 #menu_wrapper {
   background: url("/images/wood_strip_top.jpg") top left no-repeat;
   position: relative;
-  min-height: 675px;
+  min-height: 825px;
   height: 100%;
 }
 
@@ -407,4 +407,15 @@ a:active {color: white;}
 .reviews dd{
   float:right;
   display: inline;
+}
+
+#tweets {
+  width: 200px;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+#tweets a {
+  font-size: 11px;
+  text-decoration: underline;
 }
