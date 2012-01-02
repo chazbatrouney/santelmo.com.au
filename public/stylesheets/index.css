@@ -398,3 +398,13 @@ a:active {color: white;}
   padding: 0 30px 0 30px;
   background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
 }
+
+.reviews dt{
+  float: left;
+  display: inline;
+}
+
+.reviews dd{
+  float:right;
+  display: inline;
+}
