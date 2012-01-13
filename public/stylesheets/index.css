@@ -399,14 +399,34 @@ a:active {color: white;}
   background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
 }
 
-.reviews dt{
+.reviews img {
+  display: block;
   float: left;
-  display: inline;
+  margin-right: 15px;
 }
 
-.reviews dd{
-  float:right;
-  display: inline;
+.reviews li {
+  padding: 5px 0 25px;
+  overflow: hidden;
+}
+
+.reviews h2 {
+  margin-top: -3px;
+  padding: 0;
+}
+
+.reviews h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.reviews p {
+  padding: 5px 0 0;
+}
+
+.reviews p, .reviews h2, .reviews h3 {
+  margin-left: 90px;
 }
 
 #tweets {
