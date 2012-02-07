@@ -16,7 +16,7 @@ function initPage() {
           '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
           twitterlib.time.relative(tweet.created_at) + '</i>';
 
-      $tweets.html(text + '<br>' + link);
+      $tweets.html('<p>' + text +'</p>' + link);
     }
     twitterlib.status("san_telmo_", { page: 1, limit: 1 }, callback);    
   }

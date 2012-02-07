@@ -216,6 +216,7 @@ a:active {color: white;}
   width: 31px;
   height: 31px;
   float: left;
+  display: block;
 }
 
 #twitter:hover {
@@ -227,13 +228,21 @@ a:active {color: white;}
 }
 
 .twitter-follow-button {
-  padding-top: 9px;
-  padding-bottom: 1px;
+  padding-top: 10px;
+  width: 90px !important;
+}
+
+.fb-like {
+  width: 90px;
+}
+
+.social {
+  margin: 10px 10px 0 0;
 }
 
 #facebook {
   background:transparent url("/images/facebook.png") top left no-repeat;
-  width: 31px;
+  width: 45px;
   height: 31px;
   float: left;
 }
@@ -309,10 +318,6 @@ a:active {color: white;}
   width: 50px;
   height: 20px;
   display: block;
-}
-
-.social {
-  margin: 0 10px 10px 0;
 }
 
 #drinks_link {
@@ -430,12 +435,32 @@ a:active {color: white;}
 }
 
 #tweets {
-  width: 200px;
+  width: 180px;
+  padding: 10px 10px 15px 10px;
   font-size: 11px;
   margin-bottom: 10px;
+  background: url(/images/tweet_talk.png) bottom left no-repeat #940d10;
+/*
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+*/
+}
+
+#tweets p {
+  padding: 0;
+}
+
+#tweets i {
+  font-size: 11px;
+  line-height: 20px;
 }
 
 #tweets a {
-  font-size: 11px;
+  font-size: 10px;
   text-decoration: underline;
+}
+
+#tweet_link {
+  color: black; 
 }

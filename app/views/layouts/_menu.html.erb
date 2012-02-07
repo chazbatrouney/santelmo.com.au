@@ -22,17 +22,21 @@
     </div>
     <div id="footer">
       <div id="tweets">Twitter is loading...</div>
-      <%= link_to("http://twitter.com/#!/San_Telmo_") do %>
+      <%= link_to("http://twitter.com/#!/San_Telmo_", :id => 'tweet_link') do %>
         <div id="twitter" class="social"></div>
       <% end %>
       <%= link_to("https://www.facebook.com/pages/San-Telmo/238471602841880") do %>
         <div id="facebook" class="social"></div>
       <% end %>
-        <div class="fb-like" data-href="https://www.facebook.com/pages/San-Telmo/238471602841880" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true" data-colorscheme="dark" data-font="lucida grande"></div>
-        <a href="https://twitter.com/San_Telmo_" class="twitter-follow-button" data-button="grey" data-text-color="#FFFFFF" data-link-color="#00AEFF" data-show-count="false">Follow @San_Telmo_</a>
-<script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+        <div class="fb-like" data-href="https://www.facebook.com/pages/San-Telmo/238471602841880" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-colorscheme="dark" data-font="lucida grande"></div>
+        <a href="https://twitter.com/San_Telmo_" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @San_Telmo_</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       <br />
       <%= line_break %>
+      <p>
+        8am - late Mon to Friday<br />
+        9am - late Sat & Sun
+      </p>
       <p>Phone: +61 (3) 9650 5525<br />
         Fax: +61 (3) 9650 5526</p>
       <%= link_to(main_reservations_path, :class => 'pjax') do %>
