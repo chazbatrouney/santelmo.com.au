@@ -86,15 +86,15 @@ a:active {color: white;}
   width: 260px;
   float: left;
   position: relative;
-  overflow-y: auto;
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 #menu_wrapper {
   background: url("/images/wood_strip_top.jpg") top left no-repeat;
   position: relative;
-  min-height: 825px;
+  min-height: 850px;
   height: 100%;
+  overflow: visible;
 }
 
 #nav, #footer {
