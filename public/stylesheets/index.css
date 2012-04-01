@@ -324,7 +324,6 @@ a:active {color: white;}
   background:transparent url("/images/drinks_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
-  margin: 20px auto;
   display: inline;
   float: left;
   margin: 10px 20px 10px 0;
@@ -343,7 +342,7 @@ a:active {color: white;}
   background:transparent url("/images/menu_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
-  margin: 20px 20px 0;
+  margin: 20px;
   display: inline-block;
 }
 
@@ -359,7 +358,7 @@ a:active {color: white;}
   background:transparent url("/images/set_menu_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
-  margin: 20px 0 0;
+  margin: 20px 0 20px 0;
   display: inline-block;
   text-align: center;
   font-size: 20px;
@@ -440,6 +439,7 @@ a:active {color: white;}
   font-size: 11px;
   margin-bottom: 2px;
   background: url(/images/tweet_talk.png) bottom left no-repeat #940d10;
+  overflow: hidden;
 /*
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -448,15 +448,19 @@ a:active {color: white;}
 }
 
 #tweets p {
+  width: 160px;
   padding: 0;
+
 }
 
 #tweets i {
   font-size: 11px;
   line-height: 20px;
+
 }
 
 #tweets a {
+  width: 160px;
   font-size: 10px;
   text-decoration: underline;
 }
