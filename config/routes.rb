@@ -16,6 +16,8 @@ SantelmoComAu::Application.routes.draw do
   get "main/press"
 
   get "main/contact"
+  
+  get "main/employment"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
