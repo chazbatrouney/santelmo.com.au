@@ -8,57 +8,38 @@
 
 <url>
   <loc>http://santelmo.com.au/</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/index</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/philosophy</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/menu</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/drinks</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/reservations</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/gallery?page=1</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
-  <loc>http://santelmo.com.au/images/menu.pdf</loc>
-  <lastmod>2012-01-02T08:06:33+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://santelmo.com.au/main/press</loc>
 </url>
 <url>
-  <loc>http://santelmo.com.au/images/set_menu.pdf</loc>
-  <lastmod>2012-01-02T08:06:33+00:00</lastmod>
-  <changefreq>monthly</changefreq>
-</url>
-<url>
-  <loc>http://santelmo.com.au/images/drinks_menu.pdf</loc>
-  <lastmod>2012-01-02T08:06:33+00:00</lastmod>
-  <changefreq>monthly</changefreq>
+  <loc>http://santelmo.com.au/main/employment</loc>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/gallery?page=2</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/gallery</loc>
-  <changefreq>monthly</changefreq>
 </url>
 <url>
   <loc>http://santelmo.com.au/main/gallery?page=3</loc>
-  <changefreq>monthly</changefreq>
 </url>
 </urlset>
