@@ -52,6 +52,7 @@ h1, h2, h3 {
 h1 {
   font-size: 15px;
   padding: 30px 0 5px;
+  font-weight: bold;
 }
 
 h2 {
@@ -492,3 +493,6 @@ a:active {color: white;}
 #tweet_link {
   color: black; 
 }
+
+#spacer {
+  height: 50px;}
