@@ -21,7 +21,7 @@ function initPage() {
     twitterlib.status("san_telmo_", { page: 1, limit: 1 }, callback);    
   }
 
-/*
+
   var $events = $('#events');
   if ($events.length) {
     function callback(data) {
@@ -30,12 +30,14 @@ function initPage() {
         link = '<a href="http://twitter.com/' + tweet.user.screen_name +
           '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
           twitterlib.time.relative(tweet.created_at) + '</i>';
-
-      $events.html('<p>' + text +'</p>' + link);
+        
+      $events.html(function(i, old_html) {
+        return old_html + '<p>' + text +'</p>' + link;
+      }).addClass('loaded');
     }
     twitterlib.status("chazbatrouney", { page: 1, limit: 2 }, callback);
   }
-*/
+
 
 
 }

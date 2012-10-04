@@ -508,6 +508,10 @@ a:active {color: white;}
   overflow: hidden;
 }
 
+#events.loaded .loading {
+  display: none;
+}
+
 #events p a {
   width: 420px;
   padding: 0;
