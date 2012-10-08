@@ -9,7 +9,7 @@ function initPage() {
   // init any twitter guys (code stolen from BindleMe)
   var $tweets = $('#tweets');
   if ($tweets.length) {
-    function callback(data) {
+    twitterlib.status("san_telmo_", { page: 1, limit: 1 }, function(data) {
       var tweet = data[0],
         text = twitterlib.ify.clean(twitterlib.expandLinks(data[0])),
         link = '<a href="http://twitter.com/' + tweet.user.screen_name +
@@ -17,25 +17,26 @@ function initPage() {
           twitterlib.time.relative(tweet.created_at) + '</i>';
 
       $tweets.html('<p>' + text +'</p>' + link);
-    }
-    twitterlib.status("san_telmo_", { page: 1, limit: 1 }, callback);    
+    });    
   }
 
 
   var $events = $('#events');
   if ($events.length) {
-    function callback(data) {
-      var tweet = data[0],
-        text = twitterlib.ify.clean(twitterlib.expandLinks(data[0])),
-        link = '<a href="http://twitter.com/' + tweet.user.screen_name +
-          '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
-          twitterlib.time.relative(tweet.created_at) + '</i>';
+    twitterlib.timeline("chazbatrouney", { page: 1, limit: 2 }, function(data) {
+      var html = ''
+      for (var i = 0; i < data.length; i++) {
+        var tweet = data[i],
+          text = twitterlib.ify.clean(twitterlib.expandLinks(tweet)),
+          link = '<a href="http://twitter.com/' + tweet.user.screen_name +
+            '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
+            twitterlib.time.relative(tweet.created_at) + '</i>';
         
-      $events.html(function(i, old_html) {
-        return old_html + '<p>' + text +'</p>' + link;
-      }).addClass('loaded');
-    }
-    twitterlib.status("chazbatrouney", { page: 1, limit: 2 }, callback);
+        html += '<p>' + text +'</p>' + link;
+      }
+      
+      $events.html(html);
+    });
   }
 
 
