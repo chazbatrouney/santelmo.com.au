@@ -12,9 +12,9 @@ function initPage() {
     twitterlib.status("san_telmo_", { page: 1, limit: 1 }, function(data) {
       var tweet = data[0],
         text = twitterlib.ify.clean(twitterlib.expandLinks(data[0])),
-        link = '<a href="http://twitter.com/' + tweet.user.screen_name +
-          '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
-          twitterlib.time.relative(tweet.created_at) + '</i>';
+        link = '<p class="date_stamp"><a href="http://twitter.com/' + tweet.user.screen_name +
+          '<p>/status/' + tweet.id_str + '" class="twitter_link"><i>- ' +
+          twitterlib.time.relative(tweet.created_at) + '</i></a></p>';
 
       $tweets.html('<p>' + text +'</p>' + link);
     });    
@@ -23,14 +23,14 @@ function initPage() {
 
   var $events = $('#events');
   if ($events.length) {
-    twitterlib.timeline("chazbatrouney", { page: 1, limit: 2 }, function(data) {
+    twitterlib.timeline("santelmoupdates", { page: 1, limit: 4 }, function(data) {
       var html = ''
       for (var i = 0; i < data.length; i++) {
         var tweet = data[i],
           text = twitterlib.ify.clean(twitterlib.expandLinks(tweet)),
-          link = '<a href="http://twitter.com/' + tweet.user.screen_name +
-            '/status/' + tweet.id_str + '" class="twitter_link"></a><i>- ' +
-            twitterlib.time.relative(tweet.created_at) + '</i>';
+          link = '<p class="date_stamp"><a href="http://twitter.com/' + tweet.user.screen_name +
+            '/status/' + tweet.id_str + '" class="twitter_link"><i>- ' +
+            twitterlib.time.relative(tweet.created_at) + '</i></a></p>';
         
         html += '<p>' + text +'</p>' + link;
       }

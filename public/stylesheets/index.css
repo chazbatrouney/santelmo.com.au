@@ -467,18 +467,12 @@ a:active {color: white;}
   margin-bottom: 2px;
   background: url(/images/tweet_talk.png) bottom left no-repeat #940d10;
   overflow: hidden;
-/*
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-*/
 }
 
-#tweets p a {
+#tweets p, #tweets a {
   width: 160px;
   padding: 0;
   font-size: 12px;
-
 }
 
 #tweets i {
@@ -502,7 +496,6 @@ a:active {color: white;}
 #events {
   width: 440px;
   padding: 10px 10px 15px 10px;
-  font-size: 11px;
   margin-bottom: 2px;
   background: url(/images/events_talk.gif) bottom left no-repeat #940d10;
   overflow: hidden;
@@ -512,10 +505,10 @@ a:active {color: white;}
   display: none;
 }
 
-#events p a {
+#events p, #events a {
   width: 420px;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #events i {
@@ -526,4 +519,12 @@ a:active {color: white;}
 #events a {
   text-decoration: underline;
   text-transform: uppercase;
+}
+
+#events .date_stamp {
+  padding-bottom: 5px;
+}
+
+#events .twitter_link, #tweets .twitter_link {
+  text-decoration: none;
 }
