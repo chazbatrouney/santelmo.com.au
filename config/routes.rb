@@ -11,8 +11,6 @@ SantelmoComAu::Application.routes.draw do
 
   get "main/reservations"
   
-  get "main/events"
-
   get "main/gallery", :controller => 'main', :action => 'gallery', :as => 'main_gallery'
 
   get "main/press"
