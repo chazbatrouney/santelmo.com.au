@@ -110,7 +110,7 @@ a:active {color: white;}
 #menu_wrapper {
   background: url("/images/wood_strip_top.jpg") top left no-repeat;
   position: relative;
-  min-height: 892px;
+  min-height: 840px;
   height: 100%;
   overflow: visible;
 }
@@ -136,13 +136,13 @@ a:active {color: white;}
 #footer p, #footer a {
   font-size: 13px;
   font-family: "Kreon";
-  padding: 0 0 7px;
+  padding: 0 0 5px;
 }
 
 #logo {
   margin: 0 auto;
   width: 200px;
-  padding: 48px 0 35px;
+  padding: 35px 0 25px;
   display: block;
 }
 
