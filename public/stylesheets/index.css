@@ -102,6 +102,7 @@ a:active {color: white;}
   background-color: black;
   height: 100%;
   width: 260px;
+  min-height: 820px;
   float: left;
   position: relative;
   overflow: visible;
@@ -110,9 +111,19 @@ a:active {color: white;}
 #menu_wrapper {
   background: url("/images/wood_strip_top.jpg") top left no-repeat;
   position: relative;
-  min-height: 840px;
+  min-height: 820px;
   height: 100%;
   overflow: visible;
+}
+
+#bg {
+  background: url("/images/bg.jpg") repeat;
+/*   -webkit-background-size: cover; */
+  background-size: cover; 
+  height: 100%;
+  width: auto !important;
+  min-height: 820px;
+  position: static;
 }
 
 #nav, #footer {
@@ -276,15 +287,6 @@ a:active {color: white;}
 
 #google_map {
   margin: 10px 0 10px;
-}
-
-#bg {
-  background: url("/images/bg.jpg") repeat;
-/*   -webkit-background-size: cover; */
-  background-size: cover; 
-  height: 100%;
-  width: auto !important;
-  position: static;
 }
 
 #philosophy_image {
