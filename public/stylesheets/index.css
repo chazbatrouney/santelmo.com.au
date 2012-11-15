@@ -310,6 +310,13 @@ a:active {color: white;}
   height: 270px;
 }
 
+#staff {
+  background: url("/images/staff-photo.jpg") no-repeat top left;
+  margin: 0 auto 20px;
+  width: 400px;
+  height: 270px;
+}
+
 #gallery_wrapper {
   width: 1056px;
   margin: 0 auto;
