@@ -11,14 +11,7 @@
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
   <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
-</head>
-<body>
-  <%= render 'layouts/menu' %>
-  <div id="bg">
-    <%= yield %>
-  </div>
-</body>
-<script type="text/javascript">
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-26630071-1']);
@@ -30,5 +23,13 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
-</script>
+  </script>
+</head>
+<body>
+  <%= render 'layouts/menu' %>
+  <div id="bg">
+    <%= yield %>
+  </div>
+</body>
+
 </html>
