@@ -38,5 +38,16 @@ module SantelmoComAu
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # anything ending in / to the same without the '/'
+    config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
+    r301 %r{(.+)/$}, '$1'
+    
+    # www.santelmo.com.au -> santelmo.com.au (remove the www subdomain)
+    r301 %r{.*}, 'http://santelmo.com.au$&', :if => Proc.new { |rack_env|
+      ['www.santelmo.com.au'].include?(rack_env['SERVER_NAME'])
+    }
+    end
+
   end
 end
