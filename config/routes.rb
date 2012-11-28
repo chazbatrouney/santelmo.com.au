@@ -1,4 +1,6 @@
 SantelmoComAu::Application.routes.draw do
+  match 'sitemap.xml' => 'sitemaps#sitemap'
+
   root :to => 'main#index'
   
   get "main/index"
