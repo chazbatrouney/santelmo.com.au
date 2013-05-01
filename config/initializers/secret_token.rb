@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-SantelmoComAu::Application.config.secret_token = '1d8fac3a29ff81801b780bfef822f7c12fc35da4550af76668de03a0dc1d69d003dbaf0b6b199dbe13b49ccb33415d6faa9c805c30e49cb48f95fafadb60755c'
+Santelmo::Application.config.secret_token = 'd4aa0146c1f8e7a74f1fb43e39e7098e7f6927aaec480177f616f1b5f8b4faf1da42e1a9fc53a8beb78ff51154a942330a5559f0605bdddea0fcbcc816fac115'

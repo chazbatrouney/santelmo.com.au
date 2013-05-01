@@ -1,40 +1,21 @@
-
 /*
-  Copyright (c) 2008, Yahoo! Inc. All rights reserved.
-  Code licensed under the BSD License:
-  http://developer.yahoo.net/yui/license.txt
-  version: 2.6.0 */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-  margin: 0;
-  padding: 0; }
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+// css import
+@import 'reset';
+@import 'lightbox';
 
-fieldset, img {
-  border: 0; }
-
-address, caption, cite, code, dfn, strong, th, var {
-  font-style: normal;
-  font-weight: normal; }
-
-ol, ul {
-  list-style: none; }
-
-caption, th {
-  text-align: left; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal; }
-
-q:before, q:after {
-  content: ''; }
-
-abbr, acronym {
-  border: 0; }
-
+//styles
 html, body {
   height: 100%;
   font-family: "Kreon";
@@ -109,7 +90,7 @@ a:active {color: white;}
 }
 
 #menu_wrapper {
-  background: url("/images/wood_strip_top.jpg") top left no-repeat;
+  background: url("/assets/wood_strip_top.jpg") top left no-repeat;
   position: relative;
   min-height: 820px;
   height: 100%;
@@ -117,7 +98,7 @@ a:active {color: white;}
 }
 
 #bg {
-  background: url("/images/bg.jpg") repeat;
+  background: url("/assets/bg.jpg") repeat;
 /*   -webkit-background-size: cover; */
   background-size: cover; 
   height: 100%;
@@ -167,7 +148,7 @@ a:active {color: white;}
 }
 
 #arrow_left {
-  background:transparent url("/images/arrow_left.png") top left no-repeat;
+  background:transparent url("/assets/arrow_left.png") top left no-repeat;
   width: 14px;
   height: 25px;
   float: right;
@@ -190,7 +171,7 @@ a:active {color: white;}
 }
 
 #arrow_right {
-  background:transparent url("/images/arrow_right.png") top left no-repeat;
+  background:transparent url("/assets/arrow_right.png") top left no-repeat;
   width: 14px;
   height: 25px;
   float: right;
@@ -221,7 +202,7 @@ a:active {color: white;}
 .cross {
   width: 20px;
   height: 20px;
-  background: transparent url("/images/cross.png") top left no-repeat;
+  background: transparent url("/assets/cross.png") top left no-repeat;
 }
 
 .cross:hover {
@@ -242,7 +223,7 @@ a:active {color: white;}
 }
 
 #twitter {
-  background:transparent url("/images/twitter.png") top left no-repeat;
+  background:transparent url("/assets/twitter.png") top left no-repeat;
   width: 31px;
   height: 31px;
   float: left;
@@ -271,7 +252,7 @@ a:active {color: white;}
 }
 
 #facebook {
-  background:transparent url("/images/facebook.png") top left no-repeat;
+  background:transparent url("/assets/facebook.png") top left no-repeat;
   width: 45px;
   height: 31px;
   float: left;
@@ -290,28 +271,28 @@ a:active {color: white;}
 }
 
 #philosophy_image {
-  background: url("/images/philosophy_image.jpg") no-repeat top left;
+  background: url("/assets/philosophy_image.jpg") no-repeat top left;
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
 }
 
 #grill {
-  background: url("/images/grill.jpg") no-repeat top left;
+  background: url("/assets/grill.jpg") no-repeat top left;
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
 }
 
 #bar {
-  background: url("/images/beer-tap.jpg") no-repeat top left;
+  background: url("/assets/beer-tap.jpg") no-repeat top left;
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
 }
 
 #staff {
-  background: url("/images/staff-photo.jpg") no-repeat top left;
+  background: url("/assets/staff-photo.jpg") no-repeat top left;
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
@@ -323,7 +304,7 @@ a:active {color: white;}
 }
 
 .full_page {
-  background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
+  background: url("/assets/wood_strip_bottom.jpg") bottom left repeat-x;
   padding: 0 30px 0 30px;
   height: 100%;
   overflow-y: auto;
@@ -349,14 +330,14 @@ a:active {color: white;}
 
 .page_break {
   margin: 20px auto;
-  background: url("/images/break.png") no-repeat top left;
+  background: url("/assets/break.png") no-repeat top left;
   width: 50px;
   height: 20px;
   display: block;
 }
 
 #drinks_link {
-  background:transparent url("/images/drinks_thumbnail.jpg") no-repeat top left;
+  background:transparent url("/assets/drinks_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
   display: inline;
@@ -374,7 +355,7 @@ a:active {color: white;}
 }
 
 #menu_link {
-  background:transparent url("/images/menu_thumbnail.jpg") no-repeat top left;
+  background:transparent url("/assets/menu_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
   margin: 20px;
@@ -390,7 +371,7 @@ a:active {color: white;}
 }
 
 #set_menu_link {
-  background:transparent url("/images/set_menu_thumbnail.jpg") no-repeat top left;
+  background:transparent url("/assets/set_menu_thumbnail.jpg") no-repeat top left;
   width: 200px;
   height: 283px;
   margin: 20px 0 20px 0;
@@ -435,7 +416,7 @@ a:active {color: white;}
   overflow-y: auto;
   width: 460px;
   padding: 0 30px 0 30px;
-  background: url("/images/wood_strip_bottom.jpg") bottom left repeat-x;
+  background: url("/assets/wood_strip_bottom.jpg") bottom left repeat-x;
 }
 
 .reviews img {
@@ -474,7 +455,7 @@ a:active {color: white;}
   padding: 10px 10px 15px 10px;
   font-size: 11px;
   margin-bottom: 2px;
-  background: url(/images/tweet_talk.png) bottom left no-repeat #940d10;
+  background: url(/assets/tweet_talk.png) bottom left no-repeat #940d10;
   overflow: hidden;
 }
 
@@ -506,7 +487,7 @@ a:active {color: white;}
   width: 440px;
   padding: 10px 10px 15px 10px;
   margin-bottom: 2px;
-  background: url(/images/events_talk.gif) bottom left no-repeat #940d10;
+  background: url(/assets/events_talk.gif) bottom left no-repeat #940d10;
   overflow: hidden;
 }
 

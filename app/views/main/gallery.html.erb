@@ -10,8 +10,8 @@
     <h1>Gallery</h1>
     <%= line_break(151) %>
     <% @images.each do |image| %>
-      <a class="lightbox" href="/images/gallery/<%= image[:url] %>" title="<%= image[:title] %>">
-        <img class="thumbnail" src="/images/gallery/<%= image[:thumbnail_url] %>" />
+      <a class="lightbox" href="/assets/gallery/<%= image[:url] %>" title="<%= image[:title] %>">
+        <img class="thumbnail" src="/assets/gallery/<%= image[:thumbnail_url] %>" />
       </a>
     <% end %>
   </div>
