@@ -20,6 +20,10 @@ gem 'json'
 gem 'rails-ujs'
 gem 'jquery-rails', '<2.0'
 
+group :assets do
+  gem 'uglifier'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
