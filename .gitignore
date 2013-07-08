@@ -5,3 +5,4 @@ tmp/
 .DS_Store
 output/
 _assets/
+.sass-cache
