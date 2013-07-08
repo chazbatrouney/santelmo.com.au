@@ -69,6 +69,10 @@ p a:hover {
   text-decoration: none;
 }
 
+em {
+  font-style: italic;
+}
+
 a:link {color:#ccc;}
 a:visited {color:#ccc}
 a:hover {color:#de1b22;}
@@ -215,11 +219,6 @@ a:active {color: white;}
 
 .hidden {
   visibility: hidden;
-}
-
-#book_online {
-  float: right;
-  margin-top: -12px;
 }
 
 #twitter {
