@@ -80,3 +80,9 @@ $('#bg').live('pjax:end', function(event, xhr, options) {
   
   initPage();
 });
+
+$(function() {
+    $('.expand').click(function(){
+      $('.submenu').slideToggle();
+    });
+});
