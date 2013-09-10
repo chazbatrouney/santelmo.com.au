@@ -11,6 +11,8 @@ Santelmo::Application.routes.draw do
   
   get "main/drinks"
   
+  get "main/gaucho"
+  
   get "main/reservations"
   
   get "main/events"

@@ -278,7 +278,7 @@ a:active {color: white;}
   margin: 10px 0 10px;
 }
 
-#philosophy_image, #grill, #bar, #staff {
+#philosophy_image, #grill, #bar, #staff, #gaucho {
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
@@ -298,6 +298,10 @@ a:active {color: white;}
 
 #staff {
   background: url("/assets/staff-photo.jpg") no-repeat top left;
+}
+
+#gaucho {
+  background: url("/assets/gaucho.png") no-repeat top left;
 }
 
 #cafe {
