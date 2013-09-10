@@ -63,10 +63,13 @@ a {
 p a {
   text-transform: lowercase;
   text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
-p a:hover {
-  text-decoration: none;
+strong {
+  font-weight: bold;
 }
 
 em {
@@ -173,21 +176,17 @@ a:active {color: white;}
   height: 25px;
   float: right;
   margin-top: 25px;
-}
-
-#arrow_left p {
-  font-size: 10px;
-  font-family: 'Kreon';
-  margin: 1px 0 0 15px;
-}
-
-
-#arrow_left:hover {
-  background-position: 0 -25px;  
-}
-
-#arrow_left:active {
-  background-position: 0 -50px;  
+  p {
+    font-size: 10px;
+    font-family: 'Kreon';
+    margin: 1px 0 0 15px;
+  }
+  &:hover {
+    background-position: 0 -25px;
+  }
+  &:active {
+    background-position: 0 -50px;
+  }
 }
 
 #arrow_right {
@@ -196,20 +195,17 @@ a:active {color: white;}
   height: 25px;
   float: right;
   margin: 25px 0 0 60px;
-}
-
-#arrow_right p {
-  font-size: 10px;
-  font-family: 'Kreon';
-  margin: 1px 0 0 -25px;
-}
-
-#arrow_right:hover {
-  background-position: 0 -25px;  
-}
-
-#arrow_right:active {
-  background-position: 0 -50px;  
+  p {
+    font-size: 10px;
+    font-family: 'Kreon';
+    margin: 1px 0 0 -25px;
+  }
+  &:hover {
+    background-position: 0 -25px;
+  }
+  &:active {
+    background-position: 0 -50px;
+  }
 }
 
 #close_page {
@@ -223,14 +219,12 @@ a:active {color: white;}
   width: 20px;
   height: 20px;
   background: transparent url("/assets/cross.png") top left no-repeat;
-}
-
-.cross:hover {
-  background-position: 0 -20px;
-}
-
-.cross:active {
-  background-position: 0 -40px;
+  &:hover {
+    background-position: 0 -20px;
+  }
+  &:active {
+    background-position: 0 -40px;
+  }
 }
 
 .hidden {
@@ -245,12 +239,13 @@ a:active {color: white;}
   display: block;
 }
 
-#twitter:hover {
-  background-position: 0 -31px;
-}
-
-#twitter:active {
-  background-position: 0 -62px;
+#twitter {
+  &:hover {
+    background-position: 0 -31px;
+  }
+  &:active {
+    background-position: 0 -62px;
+  }
 }
 
 .twitter-follow-button {
@@ -271,46 +266,45 @@ a:active {color: white;}
   width: 45px;
   height: 31px;
   float: left;
-}
-
-#facebook:hover {
-  background-position: 0 -31px;
-}
-
-#facebook:active {
-  background-position: 0 -62px;
+  &:hover {
+    background-position: 0 -31px;
+  }
+  &:active {
+    background-position: 0 -62px;
+  }
 }
 
 #google_map {
   margin: 10px 0 10px;
 }
 
-#philosophy_image {
-  background: url("/assets/philosophy_image.jpg") no-repeat top left;
+#philosophy_image, #grill, #bar, #staff {
   margin: 0 auto 20px;
   width: 400px;
   height: 270px;
+}
+
+#philosophy_image {
+  background: url("/assets/philosophy_image.jpg") no-repeat top left;
 }
 
 #grill {
   background: url("/assets/grill.jpg") no-repeat top left;
-  margin: 0 auto 20px;
-  width: 400px;
-  height: 270px;
 }
 
 #bar {
   background: url("/assets/beer-tap.jpg") no-repeat top left;
-  margin: 0 auto 20px;
-  width: 400px;
-  height: 270px;
 }
 
 #staff {
   background: url("/assets/staff-photo.jpg") no-repeat top left;
-  margin: 0 auto 20px;
-  width: 400px;
-  height: 270px;
+}
+
+#cafe {
+  background: url("/assets/cafe-san-telmo.png") no-repeat top left;
+  margin: 10px auto 20px;
+  width: 330px;
+  height: 167px;
 }
 
 #gallery_wrapper {
@@ -358,15 +352,12 @@ a:active {color: white;}
   display: inline;
   float: left;
   margin: 10px 20px 10px 0;
-
-}
-
-#drinks_link:hover {
-  background-position: 0 -283px;
-}
-
-#drinks_link:active {
-  background-position: 0 -566px;
+  &:hover {
+    background-position: 0 -283px;
+  }
+  &:active {
+    background-position: 0 -566px;
+  }
 }
 
 #menu_link {
@@ -375,14 +366,12 @@ a:active {color: white;}
   height: 283px;
   margin: 20px;
   display: inline-block;
-}
-
-#menu_link:hover {
-  background-position: 0 -283px;
-}
-
-#menu_link:active {
-  background-position: 0 -566px;
+  &:hover {
+    background-position: 0 -283px;
+  }
+  &:active {
+    background-position: 0 -566px;
+  }
 }
 
 #set_menu_link {
@@ -393,14 +382,12 @@ a:active {color: white;}
   display: inline-block;
   text-align: center;
   font-size: 20px;
-}
-
-#set_menu_link:hover {
-  background-position: 0 -283px;
-}
-
-#set_menu_link:active {
-  background-position: 0 -566px;
+  &:hover {
+    background-position: 0 -283px;
+  }
+  &:active {
+    background-position: 0 -566px;
+  }
 }
 
 .thumbnail_heading p {
@@ -434,35 +421,32 @@ a:active {color: white;}
   background: url("/assets/wood_strip_bottom.jpg") bottom left repeat-x;
 }
 
-.reviews img {
-  display: block;
-  float: left;
-  margin-right: 15px;
-}
-
-.reviews li {
-  padding: 5px 0 25px;
-  overflow: hidden;
-}
-
-.reviews h2 {
-  margin-top: -3px;
-  padding: 0;
-  color: white;
-}
-
-.reviews h3 {
-  text-transform: uppercase;
-  font-size: 10px;
-  padding-top: 5px;
-}
-
-.reviews p {
-  padding: 5px 0 0;
-}
-
-.reviews p, .reviews h2, .reviews h3 {
-  margin-left: 90px;
+.reviews {
+  img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+  }
+  li {
+    padding: 5px 0 25px;
+    overflow: hidden;
+  }
+  h2 {
+    margin-top: -3px;
+    padding: 0;
+    color: white;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-top: 5px;
+  }
+  p {
+    padding: 5px 0 0;
+  }
+  p, h2, h3 {
+    margin-left: 90px;
+  }
 }
 
 #tweets {
@@ -472,23 +456,23 @@ a:active {color: white;}
   margin-bottom: 2px;
   background: url(/assets/tweet_talk.png) bottom left no-repeat #940d10;
   overflow: hidden;
-}
-
-#tweets p, #tweets a {
-  width: 160px;
-  padding: 0;
-  font-size: 12px;
-}
-
-#tweets i {
-  font-size: 10px;
-  line-height: 20px;
-}
-
-#tweets a {
-  font-size: 10px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  p, a {
+    width: 160px;
+    padding: 0;
+    font-size: 12px;
+  }
+  i {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  a {
+    font-size: 10px;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .twitter_link {
+    text-decoration: none;
+  }
 }
 
 #tweet_link {
@@ -498,38 +482,33 @@ a:active {color: white;}
 #spacer {
   height: 50px;}
   
+
 #events {
   width: 440px;
   padding: 10px 10px 15px 10px;
   margin-bottom: 2px;
   background: url(/assets/events_talk.gif) bottom left no-repeat #940d10;
   overflow: hidden;
-}
-
-#events.loaded .loading {
-  display: none;
-}
-
-#events p, #events a {
-  width: 420px;
-  padding: 0;
-  font-size: 14px;
-}
-
-#events i {
-  font-size: 10px;
-  line-height: 20px;
-}
-
-#events a {
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-#events .date_stamp {
-  padding-bottom: 5px;
-}
-
-#events .twitter_link, #tweets .twitter_link {
-  text-decoration: none;
+  &.loaded .loading {
+    display: none;
+  }
+  p, a {
+    width: 420px;
+    padding: 0;
+    font-size: 14px;
+  }
+  i {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  a {
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  .date_stamp {
+    padding-bottom: 5px;
+  }
+  .twitter_link {
+    text-decoration: none;
+  }
 }

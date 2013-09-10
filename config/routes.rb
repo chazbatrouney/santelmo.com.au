@@ -1,25 +1,27 @@
 Santelmo::Application.routes.draw do
   match 'sitemap.xml' => 'sitemaps#sitemap'
-
+  
   root :to => 'main#index'
   
   get "main/index"
-
-  get "main/philosophy"
   
+  get "main/philosophy"
+    
   get "main/menu"
-
+  
   get "main/drinks"
-
+  
   get "main/reservations"
   
-  get "main/gallery", :controller => 'main', :action => 'gallery', :as => 'main_gallery'
-
-  get "main/press"
-
-  get "main/contact"
+  get "main/events"
   
-  get "main/employment"
+  get "main/cafe"
+  
+  get "main/press"
+  
+  get "main/gallery", :controller => 'main', :action => 'gallery', :as => 'main_gallery'
+  
+  # get "main/employment"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

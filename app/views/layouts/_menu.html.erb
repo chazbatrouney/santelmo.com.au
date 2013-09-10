@@ -12,18 +12,18 @@
       <%= image_tag("logo.png", :size => "200x84 ", :alt => "San Telmo Logo", :id => 'logo') %>
     <% end %>
     <div id="nav">
-      <%= nav_link 'Philosophy', main_philosophy_path %>
-      <%= nav_link 'Menu', main_menu_path %>
-      <%= nav_link 'Drinks', main_drinks_path %>
+      <%= nav_link 'Menu', main_menu_path, :id => 'expand' %>
+      <%= nav_link '> Drinks', main_drinks_path %>
       <%= nav_link 'Reservations', main_reservations_path %>
-      <%= nav_link 'Gallery', main_gallery_path(:page => 1), params[:action] == 'gallery' %>
+      <%= nav_link 'Events', main_events_path %>
+      <%= nav_link 'Cafe San Telmo', main_cafe_path %>
       <%= nav_link 'Press', main_press_path %>
-      <%= nav_link 'Employment', main_employment_path %>
+      <%= nav_link 'Gallery', main_gallery_path(:page => 1), params[:action] == 'gallery' %>
       <%= line_break %>
     </div>
     <div id="footer">
       <div id="tweets">Twitter is loading...</div>
-      <%= link_to("http://twitter.com/#!/San_Telmo_", :id => 'tweet_link') do %>
+      <%= link_to("https://twitter.com/San_Telmo_", :id => 'tweet_link') do %>
         <div id="twitter" class="social"></div>
       <% end %>
       <%= link_to("https://www.facebook.com/pages/San-Telmo/238471602841880") do %>
