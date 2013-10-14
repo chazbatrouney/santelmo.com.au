@@ -21,6 +21,8 @@ gem 'rails-ujs'
 gem 'jquery-rails', '<2.0'
 
 group :assets do
+  gem 'sass-rails'
+  gem 'compass-rails'
   gem 'uglifier'
 end
 
