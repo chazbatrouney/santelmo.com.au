@@ -57,7 +57,10 @@ p {
 
 a:link {color:#ccc;}
 a:visited {color:#ccc}
-a:hover {color:#de1b22;}
+a:hover { 
+  color:#de1b22;
+  @include transition(color 150ms linear);
+}
 a:active {color: white;}
 
 a {
@@ -266,6 +269,7 @@ em {
 #twitter {
   &:hover {
     background-position: 0 -31px;
+    @include transition(background-position 50ms linear);
   }
   &:active {
     background-position: 0 -62px;
