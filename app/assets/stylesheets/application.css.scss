@@ -269,7 +269,6 @@ em {
 #twitter {
   &:hover {
     background-position: 0 -31px;
-    @include transition(background-position 50ms linear);
   }
   &:active {
     background-position: 0 -62px;
