@@ -55,10 +55,38 @@ p {
   padding-top: 5px;
 }
 
+a:link {color:#ccc;}
+a:visited {color:#ccc}
+a:hover {color:#de1b22;}
+a:active {color: white;}
+
 a {
   text-transform: uppercase;
   font-size: 14px;
   text-decoration: none;
+  &.document {
+    @include border-radius (4px);
+    @include transition(background 150ms linear);
+    background: #ccc url(icon-document.png) center left no-repeat;
+    display: inline-block;
+    border: 0px;
+    padding: 12px 14px 8px 36px;
+    margin: 12px 10px 12px 0;
+    color: black;
+    font-weight: 600;
+    text-decoration:none;
+    line-height: 14px;
+    &:hover, &:focus {
+      background-color: #de1b22;
+    }
+    &:visited {
+      color: black;
+      border: none;
+    }
+    &:visited:hover {
+      color: black;
+    }
+  }
 }
 
 p a {
@@ -76,11 +104,6 @@ strong {
 em {
   font-style: italic;
 }
-
-a:link {color:#ccc;}
-a:visited {color:#ccc}
-a:hover {color:#de1b22;}
-a:active {color: white;}
 
 .abstract {
   font-family: "Kreon";
