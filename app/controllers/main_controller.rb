@@ -22,7 +22,18 @@ class MainController < ApplicationController
       {:title => "", :url => 'image-15.jpg', :thumbnail_url => 'thumbnail-15.jpg'},
       {:title => "", :url => 'image-16.jpg', :thumbnail_url => 'thumbnail-16.jpg'},
       {:title => "", :url => 'image-17.jpg', :thumbnail_url => 'thumbnail-17.jpg'},
-      {:title => "", :url => 'image-18.jpg', :thumbnail_url => 'thumbnail-18.jpg'}
+      {:title => "", :url => 'image-18.jpg', :thumbnail_url => 'thumbnail-18.jpg'},
+      {:title => "", :url => 'image-19.jpg', :thumbnail_url => 'thumbnail-19.jpg'},
+      {:title => "", :url => 'image-20.jpg', :thumbnail_url => 'thumbnail-20.jpg'},
+      {:title => "", :url => 'image-21.jpg', :thumbnail_url => 'thumbnail-21.jpg'},
+      {:title => "", :url => 'image-22.jpg', :thumbnail_url => 'thumbnail-22.jpg'},
+      {:title => "", :url => 'image-23.jpg', :thumbnail_url => 'thumbnail-23.jpg'},
+      {:title => "", :url => 'image-24.jpg', :thumbnail_url => 'thumbnail-24.jpg'},
+      {:title => "", :url => 'image-25.jpg', :thumbnail_url => 'thumbnail-25.jpg'},
+      {:title => "", :url => 'image-26.jpg', :thumbnail_url => 'thumbnail-26.jpg'},
+      {:title => "", :url => 'image-27.jpg', :thumbnail_url => 'thumbnail-27.jpg'},
+      {:title => "", :url => 'image-28.jpg', :thumbnail_url => 'thumbnail-28.jpg'},
+      {:title => "", :url => 'image-29.jpg', :thumbnail_url => 'thumbnail-29.jpg'}
     ]
     
     @current_page = params[:page].to_i || 1
