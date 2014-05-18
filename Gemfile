@@ -20,6 +20,7 @@ gem 'json'
 gem 'rails-ujs'
 gem 'jquery-rails', '<2.0'
 gem 'twitter'
+gem 'font-awesome-rails'
 
 group :assets do
   gem 'sass-rails'
