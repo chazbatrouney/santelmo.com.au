@@ -457,23 +457,17 @@ a:active {color: white;}
   margin-bottom: 2px;
   background: url(/assets/tweet_talk.png) bottom left no-repeat #940d10;
   overflow: hidden;
-}
-
-#tweets p, #tweets a {
-  width: 160px;
-  padding: 0;
-  font-size: 12px;
-}
-
-#tweets i {
-  font-size: 10px;
-  line-height: 20px;
-}
-
-#tweets a {
-  font-size: 10px;
-  text-decoration: underline;
-  text-transform: uppercase;
+  a.twitter_link {
+    width: 160px;
+    padding: 0;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  i {
+    font-size: 10px;
+    line-height: 20px;
+  }
 }
 
 #tweet_link {
