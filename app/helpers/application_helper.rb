@@ -31,7 +31,7 @@ module ApplicationHelper
   
   
   
-  def line_break(width = 29)
+  def line_break(width = 31)
     content_tag :div, :class => 'line_break' do
       ("&#8226;" * width).html_safe
     end
