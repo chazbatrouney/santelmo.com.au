@@ -1,0 +1,6 @@
+<section id="tweets">
+    <% @tweets.each do |tweet| %>
+      <%= link_to tweet.full_text, "#{tweet.url}", class: "twitter_link", target: "_blank" %><br>
+      <i>- <%= tweet.created_at.to_formatted_s(:day_and_month) %></i>
+    <% end %>
+</section>

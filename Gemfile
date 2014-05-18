@@ -19,6 +19,7 @@ gem 'dynamic_sitemaps'
 gem 'json'
 gem 'rails-ujs'
 gem 'jquery-rails', '<2.0'
+gem 'twitter'
 
 group :assets do
   gem 'sass-rails'
