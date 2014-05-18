@@ -16,6 +16,7 @@
 @import 'reset';
 @import 'lightbox';
 @import "compass/css3";
+$page-height: 790px;
 
 //styles
 html, body {
@@ -117,7 +118,7 @@ em {
   background-color: black;
   height: 100%;
   width: 260px;
-  min-height: 790px;
+  min-height: $page-height;
   float: left;
   position: relative;
   overflow: visible;
@@ -137,21 +138,23 @@ em {
   background-size: cover; 
   height: 100%;
   width: auto !important;
-  min-height: 820px;
+  min-height: $page-height;
   position: static;
 }
 
 #ghost-box {
   background: black;
   opacity: .8;
-  width: 460px;
-  height: 300px;
+  width: 500px;
+  height: 340px;
   position: absolute;
   bottom: 30px;
   right: 30px;
-  padding: 20px;
   p {
     font-size: 17px;
+  }
+  > div {
+    margin: 20px;
   }
 }
 
