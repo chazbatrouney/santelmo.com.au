@@ -2,10 +2,21 @@
   <%= link_to(main_index_path, :id => 'close_page', :class => 'pjax cross') do %>
   <% end %>
   <h1>Cafe San Telmo</h1>
-  <%= line_break(66) %>
+  <%= line_break(70) %>
   <div id="cafe"></div>
   <p class="abstract">Cafe San Telmo is open for coffee and a light breakfast Monday - Friday from 8am until 11.30am.</p>
   <div class="page_break"></div>
+
+  <div id="menu-wrapper">
+    <div class="menu-links">
+      <%= link_to('/assets/cafe-san-telmo-placemat.pdf', :target => '_blank') do %>
+        <!-- <i class="fa fa-download"></i> -->
+        <%= image_tag("cafe-san-telmo-placemat.jpg", :size => "460x325 ", :alt => "Cafe San Telmo Placemat") %>
+      <% end %>
+    </div>  
+  </div>
+
+
   <p>Enter through Windsor place to enjoy 5 Senses coffee made by our dedicated baristas alongside fresh baked pastries and other Argentinian treats like a tostada with mozzarella and jamón, walnut toast with dulce de leche, labne and apple, or an anti-oxidant rich blend of granola and Brazilian super-fruit açai.</p>
   <p>We offer $3 coffee between 8-9am for early risers and a special 'Porteño' break- fast of our savoury tart of the day, fresh orange juice and coffee for $12, dine in or take-away.</p>
   <p>Our semi-private dining room is available for corporate breakfast meetings for groups of up to 16 people. Call Shelley on 9650 5525 to book, smaller groups on a walk-in basis.</p>
