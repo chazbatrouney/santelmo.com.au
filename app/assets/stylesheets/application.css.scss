@@ -376,6 +376,40 @@ em {
   display: block;
 }
 
+#menu-wrapper > div {
+  margin-bottom: 20px;
+  &:first-child {
+    margin-right: 15px;
+  }
+}
+
+
+.menu-links {
+  position: relative;
+  display: inline-block;
+  > a > img {
+    @include transition(all 50ms linear);
+    &:hover {
+      @include opacity (.5);
+    }
+  }
+//  > a > i {
+//    position: absolute;
+//    top: 110px;
+//    left: 182px;
+//    line-height: 100px;
+//    text-align: center;
+//    font-size: 50px;
+//    display: block  
+//    width: 100px;
+//    height: 100px;
+//    background-color: red;
+//    color: black;
+//    border-radius: 50px;
+//    @include opacity (.5);
+//  }
+}
+
 #drinks_link {
   background:transparent url("/assets/drinks_thumbnail.jpg") no-repeat top left;
   width: 200px;
@@ -393,8 +427,8 @@ em {
 
 #menu_link {
   background:transparent url("/assets/menu_thumbnail.jpg") no-repeat top left;
-  width: 200px;
-  height: 283px;
+  width: 220px;
+  height: 312px;
   margin: 20px;
   display: inline-block;
   &:hover {
