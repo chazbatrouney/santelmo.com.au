@@ -308,37 +308,9 @@ em {
   margin: 10px 0 10px;
 }
 
-#philosophy_image, #grill, #bar, #staff, #gaucho {
-  margin: 0 auto 20px;
-  width: 400px;
-  height: 270px;
-}
-
-#philosophy_image {
-  background: url("/assets/philosophy_image.jpg") no-repeat top left;
-}
-
-#grill {
-  background: url("/assets/grill.jpg") no-repeat top left;
-}
-
-#bar {
-  background: url("/assets/beer-tap.jpg") no-repeat top left;
-}
-
-#staff {
-  background: url("/assets/staff-photo.jpg") no-repeat top left;
-}
-
-#gaucho {
-  background: url("/assets/gaucho.png") no-repeat top left;
-}
-
-#cafe {
-  background: url("/assets/cafe-san-telmo.png") no-repeat top left;
+img.center {
+  display: block;
   margin: 10px auto 20px;
-  width: 330px;
-  height: 167px;
 }
 
 #gallery_wrapper {
