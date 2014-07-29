@@ -1,9 +1,14 @@
 <div class="right_float" id="main">
   <%= link_to(main_index_path, :id => 'close_page', :class => 'pjax cross') do %>
   <% end %>
-  <h1>Events</h1>
+  <h1>What's On'</h1>
   <%= line_break(70) %>
   <ul class="events">
+    <li>
+      <%= image_tag ("gaucho.png"), size: "400x270", alt: "Gaucho promotional photo" %>
+      <h2>Gaucho Lunch</h2>
+      <p>Gaucho lunch $40 per person including two courses, a glass of wine and tea or coffee.</p>
+    </li>
     <li>
       <%= image_tag("events/san-telmo-gnocchi-day.jpg", :size => "450x250", :alt => "Gnocchi Day Banner") %>
       <h2>Gnocchi Day</h2>
